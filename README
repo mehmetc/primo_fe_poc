@@ -1,3 +1,12 @@
+# ###################################################################
+#
+# Primo Frontend alternative(POC)
+#
+# LIBIS (c) 2009
+# Mehmet Celik
+#
+# ###################################################################
+
 This is a proof of concept we have been looking at(but it is dormant now). It is a jQuery based frontend with a Rails backend that translates and streamlines data from and to the Primo/Aleph server.
 All communication between the client and backend is done is JSON. If you are interested in this and need help implementing it send me an email.
 
