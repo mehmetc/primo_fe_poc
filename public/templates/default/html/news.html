@@ -1,0 +1,61 @@
+
+<div id='news'>
+	<div id='title'>News<a id='rssLink' href='http://ubkuleuven.wordpress.com/feed'>
+					<img src='<#= template_dir #>/images/rss.jpg' />
+			 </a>
+	</div>
+	<div class='clearer'>
+		<div id='news_rss'>
+			<ul id='news_titles'>
+				<# for (var i = 0; i < max_article; i++) { #>
+					<li class='ctrotator-item' id='news_item_<#= i #>'>
+						<a href='<#= news[i].url #>'><#= news[i].title #></a>
+					</li>
+				<#}#>
+			</ul>
+		</div>
+		<div id='news_description' class='crotator-description' />
+	</div>
+</div>
+
+<script type='text/javascript'>
+	function update_news(data, index) {
+		if (index >= data.length) index = 0;
+		
+		var news_items = "";
+        news_items += "<li class='ctrotator-item'>";
+		news_items += "<a href='" + data[index].url + "'>" + data[index].title + "</a>";
+		news_items += "</li>";
+
+		var item = $('#news_titles li:first');
+		item.css('background-color', '#fff');
+		
+		$('#news_titles li:last').fadeOut('fast').remove();
+		$('#news_titles').prepend(news_items);
+
+		var item = $('#news_titles li:first');
+
+		if (item != null) {
+		    item.css('background-color', '#f0de7a');
+		    var text = data[index].description;
+
+		    if (text > 600) {
+		        text = data[index].description.substring(0, 600) + "...";
+		    }
+
+
+		    $("#news_description").fadeOut(250,
+		    function() {
+		        $(this).empty();
+		        $(this).append(text).fadeIn(750);
+		    });
+		}		
+
+	    index++;
+	    setTimeout(function() {
+	        update_news(data, index)
+	    }, 6000);
+	}
+	
+	update_news(jQuery.primo.params.news, max_article);	
+</script>

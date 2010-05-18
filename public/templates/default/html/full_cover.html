@@ -1,0 +1,33 @@
+<#
+    var reg1str = "voorkant"; 
+    var reg2str = "achterkant"; 
+    var reg3str = "thumbnail"; 
+    var reg4str = "a.jpg"; 
+ 
+    var voorkantCheck   = new RegExp(reg1str); 
+    var achterkantCheck = new RegExp(reg2str); 
+    var thumbCheck      = new RegExp(reg3str); 
+    var aCheck          = new RegExp(reg4str); 
+
+	if (results.currentFullCoverData['error'] != null) {
+#> 
+		<p> <#= results.currentFullCoverData.error.message #> </p>
+<#
+	}else{
+		jQuery.each(results.currentFullCoverData.files, function(){			
+			var files = this;
+			var filename = files.name;
+			var filetype = files.filetype;
+			if ( voorkantCheck.test(filename) ){
+#>
+		<img src='http://webservices.bibliotheek.be/cgi/VlaccCover.pl?func=getfile&coversize=medium&file=<#= filetype #>/<#= filename #>'>
+<#		
+			}
+			if ( achterkantCheck.test(filename) || aCheck.test(filename) ){
+#>
+				<a href="http://webservices.bibliotheek.be/cgi/VlaccCover.pl?func=getfile&coversize=large&file=<#= filetype #>/<#= filename #>-achterkant.jpg&" target="_blank" class="cover_links">Achterkant</a>
+<#
+			}
+		});
+	}
+#>

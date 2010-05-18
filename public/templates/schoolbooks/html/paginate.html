@@ -1,0 +1,68 @@
+<#	
+	var page = parseInt( results.records.page);
+	var step =  results.records.step;
+	var total_records = parseInt(results.records.total);
+	var total_pages = Math.round(total_records / step);
+	if (total_records % step != 0){
+		total_pages++;
+	}
+
+	results.records.total_pages = total_pages;
+	if (total_records <= step) return;
+
+
+	start_page = page - 1;
+	if (start_page <= 3) start_page = 1;
+	if (total_pages < 10) start_page = 1;
+
+	if (total_pages > 10) {
+		if (start_page + 6 > total_pages) start_page = total_pages - 6;
+    }
+	if (start_page <= 3){
+		pages = 8;
+	}else{
+		pages = 6;
+	}			
+
+#>
+<#
+	if (start_page == 2){
+#>
+<span class='paginate'>1</span>
+
+<#
+	}
+
+	if (start_page > 2){
+#>	
+<span class='paginate'>1</span> .. 
+<#
+	}
+	
+	for (var i=start_page; i < start_page+pages && i < total_pages; i++) {
+		if (i != page) {
+#>		
+<span class='paginate'><#= i #></span>
+<#
+		} else {
+#>		
+<span class='paginate-current'><#= i #></span>
+<#		
+		}
+	}
+if ( (start_page+6) != total_pages && total_pages > 10){
+#>
+ .. 
+<#
+}
+if ( page == total_pages){
+#>
+<span class='paginate-current'><#= total_pages #></span>
+<#
+}else{
+#>
+<span class='paginate'><#= total_pages #></span>
+<#
+}
+#>
+<br>&nbsp;<br>

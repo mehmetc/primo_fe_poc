@@ -1,0 +1,213 @@
+<#
+recordtext = "";
+var record = "";
+var page          = parseInt(results.records.page);
+var step          = results.records.step;
+var total_records = parseInt(results.records.total);
+var total_pages   = Math.round(total_records / step);
+var record_index = results.currentFull;
+
+if (results.currentFull > 9) {
+	record_index = results.currentFull - ((page - 1) * step); /*only 10 records are loaded calculate array index */
+}
+results.records.showing = record_index;
+
+var attribute_order = ['vertitle', 'unititle', 'seriestitle', 'author', 'contributor', 'isbn', 'ispartof', 'creationdate',
+	'publisher', 'content', 'description', 'format', 'language', 'snippet'];
+
+var attribute_label = {	'vertitle'		: 'Other title', 
+						'unititle'		: 'Other title', 
+						'seriestitle'	: 'Series title', 
+						'author' 		: 'Author',
+						'contributor' 	: 'Contributor', 
+						'isbn'			: 'ISBN',
+						'ispartof' 		: 'Is Part Of',
+						'creationdate' 	: 'Creation date',
+						'publisher' 	: 'Publisher', 
+						'content' 		: 'Content', 
+						'description' 	: 'Description', 
+						'format' 		: 'Format', 
+						'language' 		: 'Language', 
+						'snippet' 		: 'Snippet'};
+
+var material_types = {'article' : {'label'  : 'Article', 'url' : '/images/materials/article.gif'},
+					  'audio'   : {'label'  : 'Audio', 'url' : '/images/materials/audio.gif'},
+					  'book'    : {'label'  : 'Book', 'url' : '/images/materials/book.gif'},
+					  'group'   : {'label'  : 'Group', 'url' : '/images/materials/group.gif'},
+					  'image'   : {'label'  : 'Image', 'url' : '/images/materials/image.gif'},
+					  'journal' : {'label'  : 'Journal', 'url' : '/images/materials/journal.gif'},
+					  'map'     : {'label'  : 'Map', 'url' : '/images/materials/map.gif'},						
+					  'score'   : {'label' : 'Score', 'url' : '/images/materials/score.gif'},
+					  'text'    : {'label'  : 'Article', 'url' : '/images/materials/text.gif'},
+					  'video'   : {'label'  : 'Article', 'url' : '/images/materials/video.gif'},
+					  'other' :   {'label' : 'Other', 'url' : '/images/materials/text_plus.gif'}};
+
+var material_type = material_types[record.type] == null ? 'other' : record.type;
+
+var typeIcon = ""; 
+var typeDescription = "";
+var material_type = 'other';
+
+record = results.records.data[record_index]; 
+
+if (record == undefined) {
+	return "";
+}
+if (record.type.length != 0){
+	
+	material_type = material_types[record.type] == null ? 'other' : record.type;
+	
+	typeIcon = material_types[material_type].url;
+	typeDescription = material_types[material_type].label;			
+					
+}
+
+#>
+
+	<div id='full_wrapper'>
+			<div id='full_nav_wrapper'>
+				<ul>
+<#
+ 	if (results.records.page != 1){
+#>
+			<li class='full_item_prevnav full_item_nav' id='<#= parseInt(results.records.page)-1 #>'>Previous 10 records</li>
+<#
+}else{
+#>			
+			<li class='full_item_prevnav_inactive'>Previous 10 records</li>
+<#
+}
+#>
+<#
+for (var i=0; i < results.records.data.length; i++){
+	var navrecord = results.records.data[i];
+	var class_text = "";
+	if (i == 0 ) {
+		class_text += "first ";
+	}
+	
+	if (i+parseInt(results.records.from)-1 == results.currentFull){
+		class_text += " current";
+	}else{
+		class_text += " nav_full_desc";		
+	}
+	
+#>	
+					<li class='<#= class_text #>' id='<#= "result"+ (i+parseInt(results.records.from)) #>'>
+<#
+	if (i+parseInt(results.records.from)-1 == results.currentFull){
+#>
+	<span></span>
+<#
+	}
+#>
+						<#= (i+parseInt(results.records.from)) #> <#= navrecord.title #> 
+					</li>
+<#
+}
+#>					
+<#
+ 	if (results.records.page != total_pages && total_pages > 1){
+#>
+			<li class='full_item_nextnav full_item_nav' id='<#= parseInt(results.records.page)+1 #>'>Next 10 records</li>
+<#
+	}else{
+#>			
+			<li class='full_item_nextnav_inactive'>Next 10 records</li>
+<#
+	}
+#>
+		
+					<li class='full_item_close'>Back to resultlist</li>
+				</ul>
+			</div> <!-- div id='full_nav_wrapper' -->
+		<div id='full_desc_wrapper'>
+			<div id='full_desc_content_wrapper'>
+				<div id='full_desc' class='clearer'>
+<!--
+					<# if (record.type.length != 0){ #>
+					<div id='full_desc_icon'>
+						<img src='<#= template_dir + typeIcon #>'>
+					</div>
+-->
+					<# } #>
+					<div id='full_record_title'> 
+						<#= record.title #>
+<!--
+						<a href='<#=record.getit[1]#>' target='_blank'> <img src='<#=template_dir + '/images/f-sfx.gif' #>' alt='LibriLinks' title='LibriLinks'></a>
+-->
+					</div>
+													
+				<div id='full_cover'>
+					<img class='loader' src='<#= template_dir #>/images/ajax-loader.gif' />
+					<div id='full_cover_data' style='display:none;' />
+				</div>
+					<ul id='full_record_data'>
+<# 
+						for (var i=0; i < attribute_order.length; i++){
+							label = attribute_label[attribute_order[i]];
+							text  = record[attribute_order[i]];
+							if (text.length > 0) {
+#>
+
+								<div class='record_label' style=''>
+									<#= label #>:
+								</div> 			
+								<div class='record_text'>
+									<#= text #>
+								</div>
+<!--
+								<li class='letter-line-spacer clearer'>
+									<div class='content_label'><#= label #></div>
+									<div style='float:left;padding-left:10px;padding-right:10px'>:</div>
+									<div style='width:600px;float:left;'><#= text #></div>
+								</li>
+-->
+<#								
+							}
+						}
+#>
+
+								<div class='record_text' id="full_availability">
+									<# if (record.source == 'BSCH_A') { #>
+										<a target='_blank' href="http://anet.ua.ac.be/record/opacehc/<#= record.original_id #>">Check availability</a>
+									<# }else if (record.source == 'LBS01') { #>
+										<a target='_blank' href="http://opac.libis.be/F?func=item-global&doc_library=LBS01&doc_number=<#= record.aleph_id #>">Check availability</a>
+									<# } else { #>
+										<a target='_blank' href="<#= record.getit[1] #>">Check availability</a>
+									<# } #>
+								</div>
+
+					</ul>
+<!--
+					<div id="basicBookmark" style='width:100px; padding-left:50px; padding-top:15px;'></div>
+-->
+				</div> <!-- div id='full_desc' -->
+				<br />
+			</div> <!-- div id='full_desc_content_wrapper' --> 
+		</div> <!-- div id='full_desc_wrapper' -->
+</div> <!-- full_wrapper -->
+
+<P>&nbsp;&nbsp;</P>
+<script type='text/javascript'>
+<#
+	var isbn = results.records.data[results.records.showing].isbn;
+
+	if (isbn.length > 0) {
+		isbn = isbn.replace(/-/g, '').split(',')[0];		
+	}
+	
+#>
+
+	jQuery.primo.ui.html_append("#full_cover_data", "full_cover_2");
+	$('.loader').css('display', 'none');	
+	$('#full_cover_data').css('display', 'block');	
+
+
+	jQuery('#basicBookmark').bookmark({icons: '<#= template_dir #>/images/bookmarks.png', 
+									   sites : ['connotea', 'delicious', 'citeulike'],
+									   url   : document.location.href,
+									   title : unescape( encodeURIComponent("<#= results.records.data[record_index].title #>"))});
+	
+</script>
+

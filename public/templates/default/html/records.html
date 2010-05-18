@@ -1,0 +1,110 @@
+<div id='results'>
+<div id='results_title'>displaying from <#= results.records.from #> to <#= results.records.to #> of <#= results.records.total #> <span id="atom_feed" /></div>
+<div id='records'>
+
+<# 
+	var attribute_order = ['author', 'creationdate', 'edition', 'publisher', 'type'];
+
+	var attribute_label = {'author' 		: 'Author',
+							'creationdate' 	: 'Creation date',
+							'edition'		: 'Edition',
+							'publisher' 	: 'Publisher',
+							'type'			: 'Type'};
+
+
+	var material_types = {'article' : {'label'  : 'Article', 'url' : '/images/materials/article.gif'},
+						  'audio'   : {'label'  : 'Audio', 'url' : '/images/materials/audio.gif'},
+						  'book'    : {'label'  : 'Book', 'url' : '/images/materials/book.gif'},
+						  'group'   : {'label'  : 'Group', 'url' : '/images/materials/group.gif'},
+						  'image'   : {'label'  : 'Image', 'url' : '/images/materials/image.gif'},
+						  'journal' : {'label'  : 'Journal', 'url' : '/images/materials/journal.gif'},
+						  'map'     : {'label'  : 'Map', 'url' : '/images/materials/map.gif'},						
+						  'score'   : {'label' : 'Score', 'url' : '/images/materials/score.gif'},
+						  'text'    : {'label'  : 'Article', 'url' : '/images/materials/text.gif'},
+						  'video'   : {'label'  : 'Article', 'url' : '/images/materials/video.gif'},
+						  'other' :   {'label' : 'Other', 'url' : '/images/materials/text_plus.gif'}};
+		
+	for (var i=0; i < results.records.data.length; i++){ 
+	var record = results.records.data[i];
+	var odd_even = i % 2 == 0 ? "odd-stripe" : "even-stripe";
+	var typeIcon = ""; 
+	var typeDescription = "";
+	var material_type = 'other';
+
+
+	if (record.type.length != 0){
+		
+		material_type = material_types[record.type] == null ? 'other' : record.type;
+		
+		typeIcon = material_types[material_type].url;
+		typeDescription = material_types[material_type].label;			
+						
+ 	}	
+#>
+
+	<div class='<#=odd_even#> record'>
+		<div id='cover<#= i #>' class='record_cover <#=odd_even#>'>
+		</div>
+		<div class='<#=odd_even#> record_desc'>		
+			<div class='briefTitle' id='result<#=(i+parseInt(jQuery.primo.params.results.records.from))#>'>
+				<#= record.title #>		
+			</div>
+			<div class='recordNr'><#= (i+parseInt(results.records.from)) #></div>
+			<# if ('linktorsrc' in record.links) { #>
+			<br><a href='<#=record.links.linktorsrc#>' target='_blank'>Get it!</a>
+			<# } #>
+
+			<a id='pnx-<#= record.full_aleph_id #>' class='pnx' href='#' >PNX</a>
+
+			<div class='record_type <#=odd_even#>'>
+				<img src='<#=template_dir + typeIcon#>' alt='<#= typeDescription #>' title='<#= typeDescription #>'>
+			</div>
+			<div class='record_data <#=odd_even#>'>
+					<#
+					for (var j=0; j < attribute_order.length; j++){
+						label = attribute_label[attribute_order[j]];
+						text  = record[attribute_order[j]];
+							if (text.length > 0) {
+					#>
+								<div class='record_label' style=''>
+									<#= label #>:
+								</div> 			
+								<div class='record_text'>
+									<#= text #>
+								</div>
+					<#
+						}
+					}
+					#>	
+			</div>
+			<a href='<#=record.getit[1]#>' target='_blank' class='sfxButtonLink'><img src='<#=template_dir + '/images/f-sfx.gif' #>' alt='LibriLinks' title='LibriLinks'></a>
+		</div>
+	</div>
+	<div class='clearer' />
+
+<#}#>
+
+	<div id="paginate-bottom">
+	<#= jQuery.primo.ui.html_load('paginate') #>
+	</div>
+</div>
+</div>
+
+
+<script type='text/javascript'>
+	var atom_feed = jQuery.primo.ui.build_feed_url();
+	if (atom_feed.length > 0) { 
+		jQuery('#atom_feed').empty().append('<a href="' + atom_feed + '" target="_blank"><img style="vertical-align:middle" src="<#= template_dir #>/images/rss.jpg" /></a>');
+	}
+	else {
+		jQuery('#atom_feed').css('display','none').empty();
+	}
+
+	for(var i = 0; i < jQuery.primo.params.results.records.step; i++) {
+		var record = jQuery.primo.params.results.records.data[i];
+		if ('isbn' in record) {
+			jQuery.primo.ui.thumbnail({selector: '#cover'+i, 'isbn': record.isbn, 'order': ['syndetics', 'google', 'libis']});
+		}
+	}
+		
+</script>

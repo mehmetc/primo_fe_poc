@@ -1,0 +1,43 @@
+<div id="main_content_brief">
+	<div id='resultSearchWrapper'>
+		<div id='searchQueryWrapper'>
+
+<#= jQuery.primo.ui.html_load('databases') #>
+			<div class='toplineSearchInput' ><div>&nbsp;&nbsp;&nbsp;</div> </div>
+<#= jQuery.primo.ui.html_load('search') #>
+<#= jQuery.primo.ui.html_load('search_advanced') #>
+
+<!------   MSS LEUKE FEATURE VOORLATER (ZIE DEEPDYVE)  -----------------
+		<div id='activeFilterWrapper' style="display:none; ">
+		<div>Later invullen met gegevens.</div>
+		</div>
+--------------------------------------------------------------------------->
+
+			<div class='bottomlineSearchInput'><div>&nbsp;&nbsp;&nbsp;</div></div>
+
+		</div>
+	</div>
+<script type='text/javascript'>
+	jQuery('#filters').bind("filterlist.update", function(){
+		var filtertext = "";
+		jQuery.each(jQuery.primo.params.search.query, function() {									
+			var filter = this;
+			
+			if (filter.index.match('facet_')) {
+				filtertext += "<li class='filter_item'>" + filter.term;
+				filtertext += "<a href='#' class='filter_item_close' >X</a>";
+				filtertext += "</li>";
+			}
+		});
+		if (filtertext != ""){
+			filtertext = "<ul>filters: "+ filtertext +"</ul>";
+		}
+		jQuery('#filters').empty().append(filtertext);
+	});
+	
+	$('#filters').trigger("filterlist.update");	
+</script>
+
+	<#= jQuery.primo.ui.html_load('brief_result') #>
+
+</div>

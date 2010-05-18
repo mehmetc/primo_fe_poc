@@ -1,0 +1,21 @@
+<div id='ajaxBusy'>
+	<p>Loading ...</p>
+</div>
+
+<div id='header-block'>
+	<div id='header'>
+		<div style="float:right; padding-right:15px; text-align:right; background-color:#FFFFFF">
+			<img src="http://www.leerboeken-vlaanderen.be/images/vlaamse_overheid.gif"  style="background-color:#FFFFFF" />
+			<img src="<#= template_dir #>/images/logo_xs.png"  style="background-color:#FFFFFF; padding-left:60px" />
+		</div>
+		<h1 align="left"><img src="http://www.leerboeken-vlaanderen.be/images/titl.JPG" width="568" height="76" id="leerboeken" /></h1>
+	</div>
+</div>
+<!--
+<#= jQuery.primo.ui.html_load('info') #>
+<#= jQuery.primo.ui.html_load('feedback') #>
+-->
+<div id='main'>
+<#= jQuery.primo.ui.html_load(jQuery.primo.params.view) #>
+</div>
+

@@ -1,0 +1,268 @@
+<#
+recordtext = "";
+var record = "";
+var page          = parseInt(results.records.page);
+var step          = results.records.step;
+var total_records = parseInt(results.records.total);
+var total_pages = Math.round(total_records / step);
+if ( total_records > 10 && (total_records%10) != 0) {
+	total_pages++;
+}
+
+var record_index = results.currentFull;
+
+if (results.currentFull > 9) {
+	record_index = results.currentFull - ((page - 1) * step); /*only 10 records are loaded calculate array index */
+}
+
+results.records.showing = record_index;
+
+var attribute_order = ['vertitle', 'unititle', 'seriestitle', 'devent', 'author', 'contributor', 'isbn', 'ispartof', 'creationdate',
+	'publisher', 'content', 'description', 'format', 'language', 'type', 'genreform', 'snippet'];
+var attribute_label = {	'vertitle'		: 'Other title', 
+						'unititle'		: 'Other title', 
+						'seriestitle'	: 'Series title', 
+						'author' 		: 'Author',
+						'contributor' 	: 'Contributor', 
+						'isbn'			: 'ISBN',
+						'ispartof' 		: 'Is Part Of',
+						'creationdate' 	: 'Creation date',
+						'publisher' 	: 'Publisher', 
+						'content' 		: 'Content', 
+						'description' 	: 'Description', 
+						'format' 		: 'Format', 
+						'language' 		: 'Language', 
+						'snippet' 		: 'Snippet',
+						'type'			: 'Type',
+						'genreform'		: 'Genre',
+						'devent'		: 'Event'};
+var material_types = {'article' : {'label'  : 'Article', 'url' : '/images/materials/article.gif'},
+					  'audio'   : {'label'  : 'Audio', 'url' : '/images/materials/audio.gif'},
+					  'book'    : {'label'  : 'Book', 'url' : '/images/materials/book.gif'},
+					  'group'   : {'label'  : 'Group', 'url' : '/images/materials/group.gif'},
+					  'image'   : {'label'  : 'Image', 'url' : '/images/materials/image.gif'},
+					  'journal' : {'label'  : 'Journal', 'url' : '/images/materials/journal.gif'},
+					  'map'     : {'label'  : 'Map', 'url' : '/images/materials/map.gif'},						
+					  'score'   : {'label' : 'Score', 'url' : '/images/materials/score.gif'},
+					  'text'    : {'label'  : 'Article', 'url' : '/images/materials/text.gif'},
+					  'video'   : {'label'  : 'Article', 'url' : '/images/materials/video.gif'},
+					  'other' :   {'label' : 'Other', 'url' : '/images/materials/text_plus.gif'}};
+
+var typeIcon = ""; 
+var typeDescription = "";
+var material_type = 'other';
+
+record = results.records.data[record_index]; 
+
+if (record == undefined) {
+	return "";
+}
+if (record.type.length != 0){
+	material_type = material_types[record.type] == null ? 'other' : record.type;
+	typeIcon = material_types[material_type].url;
+	typeDescription = material_types[material_type].label;			
+}
+#>
+
+	<div id='full_wrapper'>
+			<div id='full_nav_wrapper'>
+				<ul>
+<#
+ 	if (results.records.page != 1){
+#>
+			<li class='full_item_prevnav full_item_nav' id='<#= parseInt(results.records.page)-1 #>'>Previous 10 records</li>
+<#
+}else{
+#>			
+			<li class='full_item_prevnav_inactive'>Previous 10 records</li>
+<#
+}
+#>
+
+<#
+for (var i=0; i < results.records.data.length; i++){
+	var navrecord = results.records.data[i];
+	var class_text = "";
+	if (i == 0 ) {
+		class_text += "first ";
+	}
+	
+	if (i+parseInt(results.records.from)-1 == results.currentFull){
+		class_text += " current";
+	}else{
+		class_text += " nav_full_desc";		
+	}
+	
+	navmaterial_type = material_types[navrecord.type] == null ? 'other' : navrecord.type;
+	navtypeIcon = material_types[navmaterial_type].url;
+
+
+#>	
+					<li class='<#= class_text #>' id='<#= "result"+ (i+parseInt(results.records.from)) #>'>
+<#
+	if (i+parseInt(results.records.from)-1 == results.currentFull){
+#>
+	<span></span>
+<#
+	}
+#>
+						<img height='14px' width='14px' style='padding:0; vertical-align:middle;' src='<#= template_dir + navtypeIcon #>'>
+						<#= navrecord.title #> 
+					</li>
+<#
+}
+#>					
+<#
+ 	if (results.records.page != total_pages && total_pages > 1){
+#>
+			<li class='full_item_nextnav full_item_nav' id='<#= parseInt(results.records.page)+1 #>'>Next 10 records</li>
+<#
+	}else{
+#>			
+			<li class='full_item_nextnav_inactive'>Next 10 records <#= parseInt(results.records.page) #> - <#= total_pages #>
+[<#= results.records.total #>]
+ </li>
+<#
+	}
+#>
+		
+					<li class='full_item_close'>Back to resultlist</li>
+				</ul>
+			</div> <!-- div id='full_nav_wrapper' -->
+
+		<div id='full_desc_wrapper'>
+			<div id='full_desc_content_wrapper'>
+				<div id='full_desc'>
+					<# if (record.type.length != 0){ #>
+					<div id='full_desc_icon'>
+						<img src='<#= template_dir + typeIcon #>'>
+					</div>
+					<# } #>
+					<div id='full_record_title' class='full_record_header'> 
+						<#= record.title #>
+						
+					</div>
+					<div id='full_cover'>
+					</div>
+					<div id='full_record_data'>
+<# 
+						for (var i=0; i < attribute_order.length; i++){
+							label = attribute_label[attribute_order[i]];
+							text  = record[attribute_order[i]];
+							if (text.length > 0) {
+#>
+								<div class='record_label' style=''>
+									<#= label #>:
+								</div> 			
+								<div class='record_text'>
+									<#= text #>
+								</div>
+<#								
+							}
+						}
+#>
+					<a href='<#= record.getit[1] #>' target='_blank'  class='sfxButtonLink'><img src='<#=template_dir + '/images/f-sfx.gif' #>' alt='LibriLinks' title='LibriLinks'></a>
+					</div>
+
+					<div id="basicBookmark"></div>
+					
+					<div id="recommendations">
+						<div id='recommendations_icon'>
+							<img src='<#= template_dir #>/images/recommendations.png'>
+						</div>
+						<div class='full_record_header'>Recommendations</div>
+						<ul>
+						</ul>
+					</div>	
+				</div> <!-- div id='full_desc' -->
+				<div id='full_available'>
+					<img src='<#= template_dir #>/images/ajax-loader.gif' class="ajax_loader_items"/>
+					<div id='full_available_data' style='display:none;'>		
+						<div id='available_icon'>
+							<img src='<#= template_dir #>/images/availability.png'>
+						</div>				
+						<div class='full_record_header'>Availability</div>
+						<div id='full_available_item'></div>
+						<div id='full_available_fulltext'></div> 
+					</div>
+					<img src='<#= template_dir #>/images/ajax-loader.gif' class="ajax_loader_sfx"/>
+				</div>
+				<div id='sfx_fulltext_wrapper'>	
+					<div id='sfx_fulltext_data' style='display:none;' />
+				</div>
+			</div> <!-- div id='full_desc_content_wrapper' --> 
+		</div> <!-- div id='full_desc_wrapper' -->
+	</div> <!-- full_wrapper -->
+
+
+
+
+<script type='text/javascript'>
+	jQuery('#basicBookmark').bookmark({icons: '<#= template_dir #>/images/bookmarks.png', 
+									   sites : ['connotea', 'delicious', 'citeulike'],
+									   url   : document.location.href,
+									   title : "<#= ((results.records.data[record_index].title)) #>"});
+<# if (results.records.data[results.records.showing].aleph_id.length != 0) { #>								
+	jQuery.getJSON('item_data/<#= encodeURIComponent(results.records.data[results.records.showing].aleph_id) #>', function(data){
+		jQuery.primo.params.results.currentFullHoldings = data;
+		jQuery.primo.ui.html_append("#full_available_item", "item_data");
+		$('#full_available > .ajax_loader_items').css('display', 'none');
+		if (data.length > 0) {
+			$('#full_available_data').css('display', 'block');
+		}
+	});
+<# } else { #>	
+	$('#full_available > .ajax_loader_items').css('display', 'none');	
+<# } #>
+
+	var r = jQuery.primo.params.results.records.data[<#= record_index #>];
+	var data_blob = {'url': r.getit[1] };
+	if ('isbn' in r) {
+		jQuery.primo.ui.thumbnail({selector: '#full_cover', 'isbn': r.isbn, 'order': ['syndetics', 'google', 'libis']});
+	}
+
+	var sfx_data_blob = {'url': r.getit[1] };
+	jQuery.ajax({
+	    async: false,
+	    type: "POST",
+	    url: 'sfx_data',
+	    data: sfx_data_blob,
+	    dataType: "json",
+	    success: function(data) {
+			jQuery.primo.params.results.currentSFXFullText = data;
+			if (data.length > 0) {
+				jQuery.primo.ui.html_append("#full_available_item", "sfx_data");
+				$('#full_available_data').css('display', 'block');
+			}
+			$('#full_available > .ajax_loader_sfx').css('display', 'none');
+	    },
+	    timeout: 3000,
+	    error: function(XMLHttpRequest, textStatus, errorThrown) {
+	        jQuery.primo.error.show('Error loading fulltext Links <br />' + textStatus);
+	    }
+	});
+
+
+	jQuery.ajax({
+	    async: false,
+	    type: "POST",
+	    url: 'recommendation_data',
+	    data: data_blob,
+	    dataType: "json",
+	    success: function(data) {
+			jQuery.each(data, function(){
+				jQuery('#recommendations ul').append('<li class="recommendation"><a href="' + this.url + '" target="_blank">' + this.text + '</a></li>');
+			});		
+		
+			if (data.length > 0) {
+				jQuery('#recommendations').css('display', 'block');
+			}
+	    },
+	    timeout: 3000,
+	    error: function(XMLHttpRequest, textStatus, errorThrown) {
+	        jQuery.primo.error.show('Error loading recommendation <br />' + textStatus);
+	    }
+	});
+
+</script>
+

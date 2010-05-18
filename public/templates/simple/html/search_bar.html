@@ -1,0 +1,74 @@
+<style>
+	body {
+		margin:0;
+		padding:0;
+		font-size: 16px;
+	}
+	
+	#search_bar {		
+		position: fixed;
+		width:100%;
+	/*	height:6em;*/
+		background-color: blue;
+		padding-bottom:0.5em;
+		opacity:0.1;
+	}
+	
+	#search_form {
+		margin-top: 1em;		
+		margin-left: 0.5em;
+		height: 1.5em;		
+	}
+	
+	#search_form span{	
+		border:1px solid black; 
+		padding: 3px
+	}
+	
+	#search_form span input {
+		background-color: blue;
+		border:none;
+		width:40em;
+	}
+	
+	#search_refine {
+		margin-left:0.5em;
+		margin-top:0.5em;
+	}
+</style>
+
+<div id='search_bar'>
+	<form id='search_form'>
+		<span>
+			<input type='text' />
+			<a id='selected_database' href="#" caption='this is the database that will be queried'>local</a>
+		</span>
+		<input type='submit' value='search' />
+		<span>Help?</span>
+	</form>
+	<div id='search_refine'>Did not find what you are looking for? Refine on:
+		<a href='#'>material</a>
+		<a href='#'>date</a>
+		<a href='#'>author</a>	
+		<div id='search_refine_data'>
+			material: <a href="#">book</a> 
+					  <a href="#">article</a>
+		</div>
+	</div>
+</div>
+
+<script type='text/javascript'>
+	jQuery('#search_bar').bind('mouseenter', function(e){
+		jQuery.primo.log(e.name);
+		var el = $(this);
+		el.fadeTo('slow', 1);
+	});
+
+	jQuery('#search_bar').bind('mouseleave', function(e){
+		jQuery.primo.log(e.name);
+		var el = $(this);
+		el.fadeTo('slow', 0.1);
+	});	
+</script>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

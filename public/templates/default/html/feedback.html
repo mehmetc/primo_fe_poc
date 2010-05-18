@@ -1,0 +1,20 @@
+<div id='feedback_frame'>
+<img src='<#= template_dir #>/images/navigation/lightbox-btn-close.gif' onclick="jQuery('#feedback_frame').toggle();" id='closeButton'>
+	<form id='feedback_form' method='post' action='#'>
+			<label for='feedback_subject'>Subject</label>
+		<br />
+			<input type='text' id='feedback_subject' name='feedback_subject' value='' />
+		<br />
+			<label for='feedback_email'>Your Email address</label>					
+		<br />
+			<input type='text' id='feedback_email' name='feedback_email' value='' />
+		<br />
+			<label for='feedback_text'>Your feedback</label>
+		<br />
+			<textarea id='feedback_text' name='feedback_text' value='' />
+		<br />
+			<input type='submit' value='Send'>
+
+	</form>
+</div>
+<div id='feedback_button'><img src="<#= template_dir #>/images/feedback_tab.png"/></div>

@@ -1,0 +1,26 @@
+<# 
+	var local_base = template_dir + "/images/local_base.png";
+	var remote_base = template_dir + "/images/remote_base.png";	
+	var selected_db_type = search.database.split(',')[0];
+	var selected_db_name = search.database.split(',')[1];
+	var selected_db = databases[selected_db_name];
+#>
+
+				<div id='TabBaseWrapper'>
+					<span class="tab">
+						<img src="<#= selected_db.type == 'local' ? local_base : remote_base #>"><#= selected_db.label #> [<#= selected_db.type #>]
+					</span>										
+				</div> <!-- <div id='TabBaseWrapper'> -->
+				<div id='selectBaseWrapper'>
+					<div class='toplineSearchInput'> <div>&nbsp;&nbsp;&nbsp;</div> </div>
+					<div class='bottomlineSearchInput'> <div>&nbsp;&nbsp;&nbsp;</div> </div>
+					<div id='selectBaseList'>
+					<# jQuery.each(databases, function(k,v) {
+						var database = v;
+						var database_name = k;
+					#>				
+					<input class='database' type="radio" name="database" value="<#= database.type #>,<#= database_name #>"> <#= database.label #>
+					<img src="<#= database.type == 'local' ? local_base : remote_base #>"><br>
+					<# }); #>					
+					</div>					
+				</div> <!-- <div id='selectBaseWrapper'> -->

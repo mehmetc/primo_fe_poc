@@ -1,0 +1,18 @@
+	<div class='available_descs'>
+<#
+	jQuery.each(results.currentSFXFullText, function(){			
+		var fullTextProvider = this;
+#>
+		<div class='sfx_fulltext_data'>
+			<div class="sfx_fullTxt_provider">
+				<img src='<#= template_dir #>/images/availability_clean.png' style='padding:0'>
+				<a href="<#= fullTextProvider.url #>"><#= fullTextProvider.name #></a>
+			</div>
+			<div class="sfx_fullTxt_availability">
+				<#= fullTextProvider.availability #> 
+			</div>
+		</div><!--	<div id='available_desc'> -->
+<#		
+	});	
+#>	
+	</div><!--	<div id='available_descs'> -->

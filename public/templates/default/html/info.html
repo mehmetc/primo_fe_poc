@@ -1,0 +1,98 @@
+<div id = 'info_frame' >
+	<div id = "closeButton" />Libriry info
+	<div id ='customer_wrapper'>
+		<div id='customer_list_wrapper'>
+			<div id='customer_search'>
+				<input id='search_input_box' type='text' value='' / >
+			</div>	
+			<div id='customer_list'>
+				<ul/ >
+			</div>
+		</div >
+		<div id = 'customer_data_wrapper' >
+			<div id = 'customer_data_address' >
+			</div>		
+			<div id='customer_data_open'>
+			</div >
+		</div>
+	</div >
+</div>
+<div id='info_button' ><img src="<#= template_dir #>/images/info.png"/></div>
+
+<script type='text/javascript'>
+	function load_customer_list(filter) {
+		try{
+		    $("#customer_list ul").empty();
+		    jQuery.each(jQuery.primo.params.customers,
+		    function(key, value) {
+		        var last = "";
+		        if (key == jQuery.primo.params.customers.length - 1) last = "class='LBSlast'";
+		        if (filter) {
+		            if (value.name.toLowerCase().indexOf(filter.toLowerCase()) != -1) {
+		                $("#customer_list ul").append("<li id='customer_" + key + "' class='selectable " + last + "'>" + value.name + "</li>");
+		            }
+		        }
+		        else {
+		            $("#customer_list ul").append("<li id='customer_" + key + "' class='selectable " + last + "'>" + value.name + "</li>");
+		        }
+		    });
+
+		    jQuery.each(jQuery.primo.params.customers,
+		    function(key, value) {
+		        var customer = $('#customer_' + key);
+		        if (customer) {
+		            customer.bind('click',
+		            function(e) {
+		                if ($(this).length == 1) {
+		                    var item = $(this)[0];
+		                    customer_index = (item.id).replace('customer_', '');
+		                    load_customer_data(customer_index);
+		                }
+		            });
+		        }
+		    });
+		  $("#closeButton").html("<img src='" + jQuery.primo.params.template_dir + "/images/navigation/lightbox-btn-close.gif'>");
+		}
+		catch(e) {
+			jQuery.primo.error.show('Error loading customer list <br />' + e.message);
+		}
+	}
+
+	function load_customer_data(index) {
+	    try {
+	        today = new Date();
+	        jQuery.getJSON("http://training.libis.be:8992/cgi-bin/li_code.pl?library=" +
+	        jQuery.primo.params.customers[index].code +
+	        "&day=" + today.getDate() +
+	        "&month=" + (today.getMonth() + 1) +
+	        "&year=" + today.getFullYear() +
+	        "&language=DUT&output=json&callback=?",
+	        function(data) {
+
+	            var address = "";
+	            address += "<a href='" + data.url + "'>" + data.sub_library_name + "</a><br/>";
+	            address += data.Address + "<br />";
+	            address += data.tel + "<br />";
+	            address += data.fax + "<br />";
+	            address += "eMail:" + data.mail + "<br />";
+
+	            var activity_hours = "<ul>";
+	            activity_hours += "<li>" + data.lib_hours.Ma + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Di + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Wo + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Do + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Vr + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Za + "</li>";
+	            activity_hours += "<li>" + data.lib_hours.Zo + "</li>";
+	            activity_hours += "</ul>";
+
+	            $('#customer_data_address').empty().append(address);
+	            $('#customer_data_open').empty().append(activity_hours);
+	        });
+	    }
+	    catch(e) {
+	        jQuery.primo.error.show('Error loading customer data <br />' + e.message);
+	    }
+	}
+
+</script>

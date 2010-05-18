@@ -1,0 +1,75 @@
+
+<#
+	if (results.currentFullHoldings['error'] != null) {
+#> 
+<#= results.currentFullHoldings.error #> 
+<#
+	}
+	else {
+#>
+		<div class='available_descs'>
+<#
+		jQuery.each(results.currentFullHoldings, function(){			
+			var library = this;
+		
+			jQuery.each(library.sub_libraries, function(){
+				var sub_library = this;					
+#>
+		<div class='available_desc'>
+			<div class="item_sub_library_name">
+				<img src='<#= template_dir #>/images/availability_clean.png' style='padding:0'>
+				<#= sub_library.name #> 
+			</div>
+			<# jQuery.each(sub_library.collections, function(){
+				var collection = this;
+			#>
+			<div  class="item_collection_name"><#= collection.name #> </div >
+				<# jQuery.each(collection.item_data, function(){
+					item_data = this;
+				#>
+				<div class="items">
+				<div class="item_collection_call_nr">
+					Shelf number: <#= item_data.call_no[0] #>  <#= item_data.call_no[1] #> 
+				</div> <!-- <div class="item_collection_call_nr"> -->
+				<div class="item_availability">
+					Item status :<#= item_data.item_status #>
+<# if (item_data.on_hold){ #>
+					<br>On hold		:<#= item_data.on_hold #>
+<# } #>
+<# if (item_data.requested){ #>
+					<br>Requested   :<#= item_data.requested #>
+<# } #>
+<# if (item_data.expected){ #>
+					<br>Expected	:<#= item_data.expected #>
+<# } #>
+				</div><!-- <div class="item_availability"> -->
+				<div class="item_desc_note">
+					<# if (item_data.description.length > 1) { #>
+						Description: <#= item_data.description #>
+					<# } #>
+					<# if (item_data.note.length > 1) { #>
+						<# if (item_data.description.length > 1) { #>
+							<br />
+						<# } #>
+						Note 		:<#= item_data.note #>
+					<# } #>
+<!--
+						<br>Barcode     :<#= item_data.barcode #> 
+-->
+				</div> <!-- <div class="item_desc_note"> -->
+				</div> <!-- <div class="items"> -->	
+				<#	
+				}); 
+				#>
+			<#	
+			});
+			#>
+	</div><!--	<div id='available_desc'> -->
+<#		
+		});
+#>
+	</div><!--	<div id='available_descs'> -->
+<#		
+	});	
+}
+#>

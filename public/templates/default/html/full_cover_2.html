@@ -1,0 +1,8 @@
+<div style='display:relative;right:0'>
+	<div id='cover<#= results.records.showing #>' />
+</div>
+<script type='text/javascript'>
+jQuery.primo.ui.thumbnail({selector: '#cover<#= results.records.showing #>', 
+						   'isbn': "<#= results.records.data[results.records.showing].isbn #>", 
+						   'order': ['syndetics', 'google', 'libis']});
+</script>						

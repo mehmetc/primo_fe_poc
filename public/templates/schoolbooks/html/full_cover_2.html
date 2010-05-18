@@ -1,0 +1,13 @@
+<div style='display:relative;right:0'>
+
+<#
+	var isbn = results.records.data[results.records.showing].isbn;
+
+	if (isbn.length > 0) {
+		isbn = isbn.replace(/-/g, '').split(',')[0];		
+	}
+#>				
+<# if (isbn.length > 0) { #>
+	<img id='cover<#= results.records.showing #>' src='http://syndetics.com/index.aspx?isbn=<#= isbn #>/SC.JPG&client=CLIENT' />
+<# } #>
+</div>

@@ -1,0 +1,80 @@
+<div id='facets' class='clearer'>
+	  <div id='facets_title'>You can refine your search </span></div>
+<#
+var facet_order = ['Created on', 'Language', 'Material', 'Author', 'Topic', 'Genre', 'Collection', 'Role'];
+var i = 0;
+var facets_shown = 0;
+	
+jQuery.each(facet_order, function(){	
+	var facet_label = this;
+	var facet_grep = jQuery.grep(jQuery.primo.params.results.facets, function(n, i) {
+			return (n.label == facet_label);
+	});
+	var facet = facet_grep[0];
+	if (facet && facet.data.length > 0) {
+		var more_data = false;
+		var data_length = 0;
+		var odd_even = i % 2 == 0 ? "odd-stripe" : "even-stripe";
+			
+		if (facet && facet.data.length > 0){								
+			var li_class = "facet";
+			
+			if (i>2) {
+				li_class = "more_facet_groups facet";
+			}
+#>			
+				<div class='<#= odd_even #> <#= li_class#>'>
+					<div class='<#= odd_even #> facet_group bold'><#= facet.label #> : </div>
+					<div class='<#= odd_even #> facet_items'>
+<#
+		jQuery.each(facet.data, function() {
+			var data = this;
+			if ((data_length + data.key.length) < 100) {
+#>		
+						<a href='#' class='facet_item facet_name_<#= facet.name #>'><#= data.key #></a>(<#= data.value #>)
+<#			
+			}
+            else{
+				if (more_data == false) {
+#>				
+					<div class="more_items" id="more_items_<#= i #>">
+						<span class="more_items_button" onclick='$("#more_facets_<#= i #>").css("display", "inline"); $("#more_items_<#= i #>").toggle();'>more <#= facet.label #></span>
+					</div>
+					<div id='more_facets_<#=i#>' style='display: none'>
+<#	
+					more_data = true;
+				}
+#>
+						<a href='#' class='facet_item facet_name_<#= facet.name #>'><#= data.key #></a>(<#= data.value #>)
+<#
+			}
+			data_length += data.key.length;
+		});
+		if (more_data == true) {
+#>	
+					</div>
+<#  	
+		} 
+	
+#>	
+						</div>
+				</div>
+<#
+		facets_shown++;
+		}
+		i++;
+	}
+});
+			
+if (i > 3) {
+#>				
+				<li class='even-stripe facet clearer more_facets'>
+					<div class='facet_group'> 
+						<span class='more_facets_button' onclick='$(".more_facet_groups").toggle(); $(".more_facets").toggle();'>more</span>
+					</div>
+					<div class='even-stripe facet_items'>showing only 3 of <#= facets_shown #></div>
+				</li>
+<#
+}
+#>
+</div>

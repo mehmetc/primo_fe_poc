@@ -1,0 +1,29 @@
+<div id='search_title'>
+Search for <#= jQuery.primo.search.print_query_as_string({no_display:['scope']}) #> 
+
+
+<input type="button" name="backToMain" value=" New Search " id="backToMainButton">
+
+</div>
+<div id='filters' />
+
+<script type='text/javascript'>
+	jQuery('#filters').bind("filterlist.update", function(){
+		var filtertext = "";
+		jQuery.each(jQuery.primo.params.search.query, function() {									
+			var filter = this;
+			
+			if (filter.index.match('facet_')) {
+				filtertext += "<li class='filter_item'>" + filter.term;
+				filtertext += "<a href='#' class='filter_item_close' >X</a>";
+				filtertext += "</li>";
+			}
+		});
+		if (filtertext != ""){
+			filtertext = "<ul>filters: "+ filtertext +"</ul>";
+		}
+		jQuery('#filters').empty().append(filtertext);
+	});
+	
+	$('#filters').trigger("filterlist.update");	
+</script>

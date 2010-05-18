@@ -1,0 +1,18 @@
+				<div id='simpleSearchWrapper'>
+					<form id='searchForm' method='get' action=''>
+						<fieldset id="search">
+<# 
+	var query = "";
+    if (search.query != null){
+		 query = jQuery.primo.search.print_query_as_string({display_facet:true, no_display :['scope']});
+	}
+#>
+							<input name="" type="text" value="" style="display: none;" />
+							<input id='search_field' type='text' value='<#= query #>' />
+							<input id='goButton' type='submit' value='   ' />
+							<div id="gotoadvancedSearchWrapper"><a href="#" id="gotoAdvancedSearch">Advanced</a></div>						
+						</fieldset>
+					</form>
+				</div> 
+
+

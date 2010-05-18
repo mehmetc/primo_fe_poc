@@ -1,0 +1,2 @@
+class RemoteDataset < Dataset
+end

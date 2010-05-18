@@ -1,0 +1,5 @@
+dist
+src/primo/dist
+.DS_Store
+config/database.yml
+log

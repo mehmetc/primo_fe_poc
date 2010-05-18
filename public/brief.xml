@@ -1,0 +1,1217 @@
+<sear:SEGMENTS xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib" xmlns:sear="http://www.exlibrisgroup.com/xsd/jaguar/search">
+  <sear:JAGROOT>
+    <sear:RESULT>
+      <sear:QUERYTRANSFORMS/>
+      <sear:FACETLIST ACCURATE_COUNTERS="true">
+        <sear:FACET COUNT="20" NAME="creator">
+          <sear:FACET_VALUES VALUE="2" KEY="Bartlett, R"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Gloyna, E"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Steel, E"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Sittig, M"/>
+          <sear:FACET_VALUES VALUE="6" KEY="Beernaert, S"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Mancy, K"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Manjikian, S"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Hammer, M"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Hoather, R"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Franzini, J"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Okun, D"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Shuval, H"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Coker, E"/>
+          <sear:FACET_VALUES VALUE="5" KEY="Loeb, S"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Jenkins, S"/>
+          <sear:FACET_VALUES VALUE="5" KEY="Geyer, J"/>
+          <sear:FACET_VALUES VALUE="7" KEY="Eckenfelder, W"/>
+          <sear:FACET_VALUES VALUE="5" KEY="Fair, G"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Viessman, W"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Nemerow, N"/>
+        </sear:FACET>
+        <sear:FACET COUNT="5" NAME="lang">
+          <sear:FACET_VALUES VALUE="378" KEY="eng"/>
+          <sear:FACET_VALUES VALUE="44" KEY="fre"/>
+          <sear:FACET_VALUES VALUE="125" KEY="dut"/>
+          <sear:FACET_VALUES VALUE="1" KEY="ita"/>
+          <sear:FACET_VALUES VALUE="60" KEY="ger"/>
+        </sear:FACET>
+        <sear:FACET COUNT="2" NAME="rtype">
+          <sear:FACET_VALUES VALUE="584" KEY="books"/>
+          <sear:FACET_VALUES VALUE="22" KEY="Other"/>
+        </sear:FACET>
+        <sear:FACET COUNT="17" NAME="topic">
+          <sear:FACET_VALUES VALUE="1" KEY="Physics."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Membranes, Artificial."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Molecular Weight."/>
+          <sear:FACET_VALUES VALUE="10" KEY="Water Supply."/>
+          <sear:FACET_VALUES VALUE="2" KEY="Chemische ingenieurstechnieken"/>
+          <sear:FACET_VALUES VALUE="2" KEY="United States."/>
+          <sear:FACET_VALUES VALUE="2" KEY="Landbouwwetenschappen"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Air Pollution"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Sanitary Engineering."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Biochemistry."/>
+          <sear:FACET_VALUES VALUE="9" KEY="Water Pollution"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Environment, Controlled."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Oils."/>
+          <sear:FACET_VALUES VALUE="4" KEY="Sewage."/>
+          <sear:FACET_VALUES VALUE="9" KEY="Water"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Sterilization."/>
+          <sear:FACET_VALUES VALUE="7" KEY="Congresses"/>
+        </sear:FACET>
+        <sear:FACET NAME="creationdate"/>
+        <sear:FACET COUNT="12" NAME="domain">
+          <sear:FACET_VALUES VALUE="5" KEY="LIHBI"/>
+          <sear:FACET_VALUES VALUE="14" KEY="KHCO"/>
+          <sear:FACET_VALUES VALUE="5" KEY="LUKAS"/>
+          <sear:FACET_VALUES VALUE="11" KEY="BB"/>
+          <sear:FACET_VALUES VALUE="1" KEY="KVHA"/>
+          <sear:FACET_VALUES VALUE="2" KEY="VLP"/>
+          <sear:FACET_VALUES VALUE="7" KEY="KUB"/>
+          <sear:FACET_VALUES VALUE="7" KEY="KHCA"/>
+          <sear:FACET_VALUES VALUE="10" KEY="VLEK"/>
+          <sear:FACET_VALUES VALUE="9" KEY="RBINS"/>
+          <sear:FACET_VALUES VALUE="8" KEY="BPB"/>
+          <sear:FACET_VALUES VALUE="27" KEY="WIV"/>
+        </sear:FACET>
+        <sear:FACET COUNT="12" NAME="library">
+          <sear:FACET_VALUES VALUE="5" KEY="LIHBI"/>
+          <sear:FACET_VALUES VALUE="14" KEY="KHCO"/>
+          <sear:FACET_VALUES VALUE="5" KEY="LUKAS"/>
+          <sear:FACET_VALUES VALUE="11" KEY="BB"/>
+          <sear:FACET_VALUES VALUE="1" KEY="KVHA"/>
+          <sear:FACET_VALUES VALUE="2" KEY="VLP"/>
+          <sear:FACET_VALUES VALUE="7" KEY="KUB"/>
+          <sear:FACET_VALUES VALUE="7" KEY="KHCA"/>
+          <sear:FACET_VALUES VALUE="10" KEY="VLEK"/>
+          <sear:FACET_VALUES VALUE="9" KEY="RBINS"/>
+          <sear:FACET_VALUES VALUE="8" KEY="BPB"/>
+          <sear:FACET_VALUES VALUE="27" KEY="WIV"/>
+        </sear:FACET>
+        <sear:FACET COUNT="3" NAME="local1">
+          <sear:FACET_VALUES VALUE="105" KEY="Editor"/>
+          <sear:FACET_VALUES VALUE="338" KEY="Author"/>
+          <sear:FACET_VALUES VALUE="133" KEY="Other"/>
+        </sear:FACET>
+      </sear:FACETLIST>
+      <sear:DOCSET TOTAL_TIME="4264" LASTHIT="10" FIRSTHIT="1" TOTALHITS="606" HIT_TIME="845">
+        <sear:DOC NO="1" RANK="0.06908225" ID="50750">
+          <PrimoNMBib>
+            <record>
+              <control>
+                <sourcerecordid>000049661</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000049661</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Water</title>
+                <publisher>Philadelphia (Pa.): American society for testing and materials,</publisher>
+                <creationdate>1978</creationdate>
+                <format>1232 p.</format>
+                <language>eng</language>
+                <relation>Annual book of ASTM standards ; 1978, 31</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1ABIB: Landbouwwetenschappen$$2(adid 232 )$$Savailable$$32$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+              </links>
+              <search>
+                <title>Water</title>
+                <subject>#ABIB:adid</subject>
+                <subject>628.1 Water supply, treatment, consumption and use eng</subject>
+                <subject>543.3 Water sampling and analysis eng</subject>
+                <general>113681</general>
+                <general>1232 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000049661</recordid>
+                <isbn>0-103-10781-6*</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1978</creationdate>
+                <addtitle>Annual book of ASTM standards 1978, 31</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1978</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1978</creationdate>
+                <rsrctype>books</rsrctype>
+                <frbrgroupid>2729819</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Water</c3>
+                <c4>Philadelphia (Pa.):</c4>
+                <f6>1978</f6>
+                <f7>water</f7>
+                <f8>water</f8>
+                <f10>american society for testing and materials</f10>
+                <f13>American society for testing and materials,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k2>$$Kwater$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <btitle>Water</btitle>
+                <seriestitle>Annual book of ASTM standards 1978, 31</seriestitle>
+                <date>1978</date>
+                <risdate>1978</risdate>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Philadelphia (Pa.)</cop>
+                <pub>American society for testing and materials</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000049661" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water&amp;rft.aulast=&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="2" RANK="0.03451674" ID="24897">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000023995</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023995</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Water</title>
+                <creator>Biemond, C.  (Author)</creator>
+                <publisher>Amsterdam : Querido,</publisher>
+                <creationdate>1968</creationdate>
+                <format>166 p.</format>
+                <language>eng</language>
+                <relation>Moderne medische inzichten</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WMAG: Magazijn (CBA)$$2(A15367 1968 )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+              </links>
+              <search>
+                <creatorcontrib>Biemond, C.</creatorcontrib>
+                <title>Water</title>
+                <subject>574.6 Applied hydrobiology eng</subject>
+                <general>50439</general>
+                <general>166 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023995</recordid>
+                <rsrctype>book</rsrctype>
+                <creationdate>1968</creationdate>
+                <addtitle>Moderne medische inzichten</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1968</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1968</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Biemond, C</creatorcontrib>
+                <lfc01>Author</lfc01>
+                <frbrgroupid>2703622</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Water</c3>
+                <c4>Amsterdam :</c4>
+                <f6>1968</f6>
+                <f7>water</f7>
+                <f8>water</f8>
+                <f10>querido</f10>
+                <f13>Querido,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kbiemond c$$AA</k1>
+                <k2>$$Kwater$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Biemond</aulast>
+                <aufirst>C.</aufirst>
+                <addau>Biemond, C</addau>
+                <btitle>Water</btitle>
+                <seriestitle>Moderne medische inzichten</seriestitle>
+                <date>1968</date>
+                <risdate>1968</risdate>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Amsterdam</cop>
+                <pub>Querido</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000023995" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water&amp;rft.aulast=Biemond&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="3" RANK="3.7897442E-4" ID="80428">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000081262</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000081262</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>other</type>
+                <title>Water research.</title>
+                <publisher>Oxford : Pergamon,</publisher>
+                <creationdate>s.d.</creationdate>
+                <description>International association on water pollution research</description>
+                <language>eng</language>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WDEP: Extern depot (CBA)$$2(P1716 )$$Scheck_holdings$$5N</availlibrary>
+                <availlibrary>$$ILIBIS$$LWIV$$2(IHE PERI * )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <vertitle>Water res</vertitle>
+                <availinstitution>$$ILIBIS$$Savailable</availinstitution>
+                <availinstitution>$$IKUL$$Scheck_holdings</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+              </links>
+              <search>
+                <title>Water research.</title>
+                <subject>#TS:ABIB</subject>
+                <subject>#TS:TCIT</subject>
+                <subject>#TS:WDEP</subject>
+                <subject>628.515 &lt;05&gt; Measures against pollution of water--Tijdschriften eng</subject>
+                <subject>556 Hydrosphere. Water in general. Hydrology eng</subject>
+                <subject>546.212 Water H"2 O eng</subject>
+                <subject>B01.27 Geneeskunde en gezondheidszorg. Farmacologie en farmacokinetiek Medicine and health care. Pharmacology and pharmacokinetics</subject>
+                <subject>B01.45 Geneeskunde en gezondheidszorg. Maatschappelijke gezondheidszorg Medicine and health care. Social health care</subject>
+                <subject>E04.05 Bouwkunde. Hydraulica Civil and structural engineering. Hydraulic engineering</subject>
+                <subject>E05 Chemische ingenieurstechnieken Chemical engineering</subject>
+                <subject>E13 Landbouwwetenschappen Agricultural science.</subject>
+                <general>182319</general>
+                <general>Monthly - Maandelijks - Mensuel</general>
+                <general>International association on water pollution research</general>
+                <general>Ten dele voortzetting van: Air and water pollution</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000081262</recordid>
+                <issn>0043-1354</issn>
+                <rsrctype>other</rsrctype>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <searchscope>LIBIS</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+                <scope>LIBIS</scope>
+                <alttitle>Water res</alttitle>
+              </search>
+              <sort/>
+              <facets>
+                <language>eng</language>
+                <topic>Geneeskunde en gezondheidszorg. Farmacologie en farmacokinetiek</topic>
+                <topic>Geneeskunde en gezondheidszorg. Maatschappelijke gezondheidszorg</topic>
+                <topic>Bouwkunde. Hydraulica</topic>
+                <topic>Chemische ingenieurstechnieken</topic>
+                <topic>Landbouwwetenschappen</topic>
+                <collection>WIV</collection>
+                <rsrctype>other</rsrctype>
+                <creatorcontrib>International association on water pollution research</creatorcontrib>
+                <library>WIV</library>
+                <lfc01>Other</lfc01>
+                <frbrgroupid>2759331</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c2>0043-1354</c2>
+                <c3>Water research.</c3>
+                <c4>Oxford :</c4>
+                <f3>0043-1354</f3>
+                <f7>water research</f7>
+                <f8>water research</f8>
+                <f10>pergamon</f10>
+                <f13>Pergamon,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kinternational association on water pollution research$$AA</k1>
+                <k2>$$Kwater research$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <institution>LIBIS</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <addau>International association on water pollution research</addau>
+                <btitle>Water research.</btitle>
+                <addtitle>Water res</addtitle>
+                <risdate>s.d.</risdate>
+                <issn>0043-1354</issn>
+                <format>book</format>
+                <genre>unknown</genre>
+                <ristype>GEN</ristype>
+                <cop>Oxford</cop>
+                <pub>Pergamon</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000081262" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water%20research.&amp;rft.aulast=&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=0043-1354&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="4" RANK="2.1538725E-4" ID="24909">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000023352</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023352</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Advances in water quality improvement</title>
+                <contributor>Gloyna, Earnest F.  (Editor)</contributor>
+                <contributor>Eckenfelder, W. Wesley  (Editor)</contributor>
+                <edition>2e ed.</edition>
+                <publisher>Austin (Tex.): University of Texas press,</publisher>
+                <creationdate>1971</creationdate>
+                <format>XVIII, 513 p.</format>
+                <language>eng</language>
+                <relation>Water resources symposia ; 1</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WMAG: Magazijn (CBA)$$2(B29582 )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Gloyna, Earnest F.</creatorcontrib>
+                <creatorcontrib>Eckenfelder, W. Wesley</creatorcontrib>
+                <title>Advances in water quality improvement /</title>
+                <subject>Water Pollution.</subject>
+                <subject>Congresses</subject>
+                <subject>628.3 Sewage. Surface and foul water. Properties and treatment. Sewage works eng</subject>
+                <general>49512</general>
+                <general>2e ed.</general>
+                <general>XVIII, 513 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023352</recordid>
+                <isbn>0-292-73690-8</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1971</creationdate>
+                <addtitle>Water resources symposia 1</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1971</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1971</creationdate>
+                <topic>Water Pollution.</topic>
+                <topic>Congresses</topic>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Gloyna, E</creatorcontrib>
+                <creatorcontrib>Eckenfelder, W</creatorcontrib>
+                <lfc01>Editor</lfc01>
+                <frbrgroupid>2703638</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Advances in water quality improvement /</c3>
+                <c4>Austin (Tex.):</c4>
+                <f6>1971</f6>
+                <f7>advances in water quality improvement</f7>
+                <f8>advances in water quality improvement</f8>
+                <f10>university of texas press</f10>
+                <f13>University of Texas press,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kgloyna earnest f$$AA</k1>
+                <k1>$$Keckenfelder w wesley$$AA</k1>
+                <k2>$$Kadvances in water quality improvement ed by earnest f gloyna and w wesley eckenfelder$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Gloyna</aulast>
+                <aufirst>Earnest F.</aufirst>
+                <addau>Gloyna, Earnest F</addau>
+                <addau>Eckenfelder, W. Wesley</addau>
+                <btitle>Advances in water quality improvement</btitle>
+                <seriestitle>Water resources symposia 1</seriestitle>
+                <date>1971</date>
+                <risdate>1971</risdate>
+                <isbn>0-292-73690-8</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Austin (Tex.)</cop>
+                <pub>University of Texas press</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000023352" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Advances%20in%20water%20quality%20improvement&amp;rft.aulast=Gloyna&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-292-73690-8&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="5" RANK="2.0042814E-4" ID="24469">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000024659</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000024659</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Water quality : management and pollution control problems</title>
+                <contributor>Jenkins, S. H.  (Editor)</contributor>
+                <publisher>Oxford : Pergamon,</publisher>
+                <creationdate>1973</creationdate>
+                <format>XX, 352 p.</format>
+                <description>Jersalem workshop papers</description>
+                <language>eng</language>
+                <relation>Progress in water technology ; 3</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WBIB: Openrek-collectie (CBA)$$2(2 628.3 1973 )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Jenkins, S. H.</creatorcontrib>
+                <title>Water quality : management and pollution control problems /</title>
+                <subject>Sewage - Purification - Congresses</subject>
+                <subject>Water quality management - Congresses</subject>
+                <general>51529</general>
+                <general>XX, 352 p.</general>
+                <general>Jersalem workshop papers</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000024659</recordid>
+                <isbn>0-08-017006-4</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1973</creationdate>
+                <addtitle>Progress in water technology 3</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1973</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1973</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Jenkins, S</creatorcontrib>
+                <lfc01>Editor</lfc01>
+                <frbrgroupid>2703441</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Water quality : management and pollution control problems /</c3>
+                <c4>Oxford :</c4>
+                <f6>1973</f6>
+                <f7>water quality management and pollution control problems</f7>
+                <f8>water quality management and pollution control problems</f8>
+                <f10>pergamon</f10>
+                <f13>Pergamon,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kjenkins s h$$AA</k1>
+                <k2>$$Kwater quality management and pollution control problems ed by s h jenkins$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Jenkins</aulast>
+                <aufirst>S. H.</aufirst>
+                <addau>Jenkins, S. H</addau>
+                <btitle>Water quality : management and pollution control problems</btitle>
+                <seriestitle>Progress in water technology 3</seriestitle>
+                <date>1973</date>
+                <risdate>1973</risdate>
+                <isbn>0-08-017006-4</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Oxford</cop>
+                <pub>Pergamon</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000024659" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water%20quality%20:%20management%20and%20pollution%20control%20problems&amp;rft.aulast=Jenkins&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-08-017006-4&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="6" RANK="2.0042813E-4" ID="24754">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000023402</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023402</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Water quality improvement by physical and chemical processes</title>
+                <contributor>Gloyna, Earnest F.  (Editor)</contributor>
+                <publisher>Austin (Tex.): University of Texas press,</publisher>
+                <creationdate>1970</creationdate>
+                <format>XV, 448 p.</format>
+                <language>eng</language>
+                <relation>Water resources symposium ; 3</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WMAG: Magazijn (CBA)$$2(B36922 )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+              </links>
+              <search>
+                <creatorcontrib>Gloyna, Earnest F.</creatorcontrib>
+                <title>Water quality improvement by physical and chemical processes /</title>
+                <subject>Sewage - Purification - Addresses, essays, lectures</subject>
+                <subject>Water reuse - Addresses, essays, lectures</subject>
+                <general>49577</general>
+                <general>XV, 448 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023402</recordid>
+                <isbn>0-292-70041-7*</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1970</creationdate>
+                <addtitle>Water resources symposium 3</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1970</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1970</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Gloyna, E</creatorcontrib>
+                <lfc01>Editor</lfc01>
+                <frbrgroupid>2703245</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Water quality improvement by physical and chemical processes /</c3>
+                <c4>Austin (Tex.):</c4>
+                <f6>1970</f6>
+                <f7>water quality improvement by physical and chemical processes</f7>
+                <f8>water quality improvement by physical and chemical processes</f8>
+                <f10>university of texas press</f10>
+                <f13>University of Texas press,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kgloyna earnest f$$AA</k1>
+                <k2>$$Kwater quality improvement by physical and chemical processes ed by earnest f gloyna e a$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Gloyna</aulast>
+                <aufirst>Earnest F.</aufirst>
+                <addau>Gloyna, Earnest F</addau>
+                <btitle>Water quality improvement by physical and chemical processes</btitle>
+                <seriestitle>Water resources symposium 3</seriestitle>
+                <date>1970</date>
+                <risdate>1970</risdate>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Austin (Tex.)</cop>
+                <pub>University of Texas press</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000023402" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water%20quality%20improvement%20by%20physical%20and%20chemical%20processes&amp;rft.aulast=Gloyna&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="7" RANK="1.9396271E-4" ID="20799">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000018255</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000018255</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Computer systems and water resources</title>
+                <creator>Bugliarello, George  (Author)</creator>
+                <creator>Gunther, Fred  (Author)</creator>
+                <publisher>Amsterdam : Elsevier,</publisher>
+                <creationdate>1974</creationdate>
+                <format>XIV, 202 p.</format>
+                <language>eng</language>
+                <relation>Developments in water science ; 1</relation>
+                <source>LBS01</source>
+                <availlibrary>$$ILIBIS$$LRBINS$$1Central Library$$2(B55003 )$$Savailable$$31$$40$$5N$$60</availlibrary>
+                <availlibrary>$$IKUL$$L$$1WMAG: Magazijn (CBA)$$2(A80351 )$$Savailable$$32$$40$$5N$$60</availlibrary>
+                <availinstitution>$$ILIBIS$$Savailable</availinstitution>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Bugliarello, George</creatorcontrib>
+                <creatorcontrib>Gunther, Fred</creatorcontrib>
+                <title>Computer systems and water resources</title>
+                <subject>Water resources development - Data processing</subject>
+                <subject>#ABIB:irri</subject>
+                <subject>681.3 Computerwetenschap dut</subject>
+                <general>40026</general>
+                <general>RBINS-042861</general>
+                <general>XIV, 202 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000018255</recordid>
+                <isbn>0-444-41259-X</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1974</creationdate>
+                <addtitle>Developments in water science 1</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>LIBIS</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>LIBIS</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1974</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1974</creationdate>
+                <collection>RBINS</collection>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Bugliarello, G</creatorcontrib>
+                <creatorcontrib>Gunther, F</creatorcontrib>
+                <library>RBINS</library>
+                <lfc01>Author</lfc01>
+                <frbrgroupid>2698940</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Computer systems and water resources</c3>
+                <c4>Amsterdam :</c4>
+                <f6>1974</f6>
+                <f7>computer systems and water resources</f7>
+                <f8>computer systems and water resources</f8>
+                <f10>elsevier</f10>
+                <f13>Elsevier,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kbugliarello george$$AA</k1>
+                <k1>$$Kgunther fred$$AA</k1>
+                <k2>$$Kcomputer systems and water resources$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>LIBIS</institution>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Bugliarello</aulast>
+                <aufirst>George</aufirst>
+                <addau>Bugliarello, George</addau>
+                <addau>Gunther, Fred</addau>
+                <btitle>Computer systems and water resources</btitle>
+                <seriestitle>Developments in water science 1</seriestitle>
+                <date>1974</date>
+                <risdate>1974</risdate>
+                <isbn>0-444-41259-X</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Amsterdam</cop>
+                <pub>Elsevier</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000018255" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Computer%20systems%20and%20water%20resources&amp;rft.aulast=Bugliarello&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-444-41259-X&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="8" RANK="1.9331291E-4" ID="19153">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000018309</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000018309</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Pipeline design for water engineers</title>
+                <creator>Stephenson, David  (Author)</creator>
+                <publisher>Amsterdam : Elsevier,</publisher>
+                <creationdate>1976</creationdate>
+                <format>X, 222 p.</format>
+                <language>eng</language>
+                <relation>Developments in water science ; 6</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WBIB: Openrek-collectie (CBA)$$2(2 628.1 1976 )$$Savailable$$32$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Stephenson, David</creatorcontrib>
+                <title>Pipeline design for water engineers</title>
+                <subject>Water-pipes</subject>
+                <subject>#ABIB:irri</subject>
+                <subject>628.14 Conveyance of water from catchment point to distribution system. Trunk mains eng</subject>
+                <general>40151</general>
+                <general>X, 222 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000018309</recordid>
+                <isbn>0-444-41417-7</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1976</creationdate>
+                <addtitle>Developments in water science 6</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1976</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1976</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Stephenson, D</creatorcontrib>
+                <lfc01>Author</lfc01>
+                <frbrgroupid>2697982</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Pipeline design for water engineers</c3>
+                <c4>Amsterdam :</c4>
+                <f6>1976</f6>
+                <f7>pipeline design for water engineers</f7>
+                <f8>pipeline design for water engineers</f8>
+                <f10>elsevier</f10>
+                <f13>Elsevier,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kstephenson david$$AA</k1>
+                <k2>$$Kpipeline design for water engineers$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Stephenson</aulast>
+                <aufirst>David</aufirst>
+                <addau>Stephenson, David</addau>
+                <btitle>Pipeline design for water engineers</btitle>
+                <seriestitle>Developments in water science 6</seriestitle>
+                <date>1976</date>
+                <risdate>1976</risdate>
+                <isbn>0-444-41417-7</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Amsterdam</cop>
+                <pub>Elsevier</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000018309" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Pipeline%20design%20for%20water%20engineers&amp;rft.aulast=Stephenson&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-444-41417-7&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="9" RANK="1.9303431E-4" ID="75661">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000075984</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000075984</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Water supply and sewerage</title>
+                <creator>Steel, E. W.  (Author)</creator>
+                <creator>MacGhee, Terence J.  (Author)</creator>
+                <edition>5e ed.</edition>
+                <publisher>New York (N.Y.): MacGraw-Hill,</publisher>
+                <creationdate>1979</creationdate>
+                <format>XIV, 665 p.,</format>
+                <language>eng</language>
+                <relation>MacGraw-Hill series in water resources and environmental engineering</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WBIB: Openrek-collectie (CBA)$$2(5 628.2 1979 )$$Savailable$$31$$40$$5N$$62</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Steel, E. W.</creatorcontrib>
+                <creatorcontrib>MacGhee, Terence J.</creatorcontrib>
+                <title>Water supply and sewerage</title>
+                <subject>Sewage</subject>
+                <subject>Sewerage</subject>
+                <subject>Water-supply</subject>
+                <subject>Water-supply engineering</subject>
+                <subject>628.1 Water supply, treatment, consumption and use eng</subject>
+                <general>170378</general>
+                <general>5e ed.</general>
+                <general>XIV, 665 p., ill.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000075984</recordid>
+                <isbn>0-07-060929-2</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1979</creationdate>
+                <addtitle>MacGraw-Hill series in water resources and environmental engineering</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1979</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1979</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Steel, E</creatorcontrib>
+                <creatorcontrib>MacGhee, T</creatorcontrib>
+                <lfc01>Author</lfc01>
+                <frbrgroupid>2754680</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Water supply and sewerage</c3>
+                <c4>New York (N.Y.):</c4>
+                <f6>1979</f6>
+                <f7>water supply and sewerage</f7>
+                <f8>water supply and sewerage</f8>
+                <f10>macgraw hill</f10>
+                <f13>MacGraw-Hill,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Ksteel e w$$AA</k1>
+                <k1>$$Kmacghee terence j$$AA</k1>
+                <k2>$$Kwater supply and sewerage$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Steel</aulast>
+                <aufirst>E. W.</aufirst>
+                <addau>Steel, E. W</addau>
+                <addau>MacGhee, Terence J</addau>
+                <btitle>Water supply and sewerage</btitle>
+                <seriestitle>MacGraw-Hill series in water resources and environmental engineering</seriestitle>
+                <date>1979</date>
+                <risdate>1979</risdate>
+                <isbn>0-07-060929-2</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>New York (N.Y.)</cop>
+                <pub>MacGraw-Hill</pub>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000075984" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Water%20supply%20and%20sewerage&amp;rft.aulast=Steel&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-07-060929-2&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+        <sear:DOC NO="10" RANK="1.874973E-4" ID="22850">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000023120</sourcerecordid>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023120</recordid>
+                <originalsourceid>LBS01</originalsourceid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>book</type>
+                <title>Phosphorus in fresh water and the marine environment</title>
+                <contributor>Jenkins, S. H.  (Editor)</contributor>
+                <publisher>Oxford : Pergamon,</publisher>
+                <creationdate>1973</creationdate>
+                <format>VI, 349 p.</format>
+                <language>eng</language>
+                <relation>Progress in water technology ; 2</relation>
+                <source>LBS01</source>
+                <availlibrary>$$IKUL$$L$$1WMAG: Magazijn (CBA)$$2(B41976 )$$Savailable$$32$$40$$5N$$60</availlibrary>
+                <availinstitution>$$IKUL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <thumbnail>$$Tgoogle_thumb</thumbnail>
+                <linktotoc>$$Tamazon_toc$$DTable of Contents</linktotoc>
+                <linktoabstract>$$Tsyndetics_abstract$$DAbstract</linktoabstract>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+                <linktoexcerpt>$$Tsyndetics_excerpt$$DExcerpt from item</linktoexcerpt>
+              </links>
+              <search>
+                <creatorcontrib>Jenkins, S. H.</creatorcontrib>
+                <title>Phosphorus in fresh water and the marine environment /</title>
+                <subject>Eutrophication - Congresses</subject>
+                <subject>Phosphorus - Toxicology - Congresses</subject>
+                <subject>Water - Pollution - Environmental aspects - Congresses</subject>
+                <general>49184</general>
+                <general>VI, 349 p.</general>
+                <sourceid>LBS01</sourceid>
+                <recordid>LBS01000023120</recordid>
+                <isbn>0-08-017697-6</isbn>
+                <rsrctype>book</rsrctype>
+                <creationdate>1973</creationdate>
+                <addtitle>Progress in water technology 2</addtitle>
+                <searchscope>LBS01</searchscope>
+                <searchscope>KUL</searchscope>
+                <scope>LBS01</scope>
+                <scope>KUL</scope>
+              </search>
+              <sort>
+                <creationdate>1973</creationdate>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1973</creationdate>
+                <rsrctype>books</rsrctype>
+                <creatorcontrib>Jenkins, S</creatorcontrib>
+                <lfc01>Editor</lfc01>
+                <frbrgroupid>2701681</frbrgroupid>
+                <frbrtype>6</frbrtype>
+              </facets>
+              <dedup>
+                <t>2</t>
+                <c3>Phosphorus in fresh water and the marine environment /</c3>
+                <c4>Oxford :</c4>
+                <f6>1973</f6>
+                <f7>phosphorus in fresh water and the marine environment</f7>
+                <f8>phosphorus in fresh water and the marine environment</f8>
+                <f10>pergamon</f10>
+                <f13>Pergamon,</f13>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kjenkins s h$$AA</k1>
+                <k2>$$Kphosphorus in fresh water and the marine environment ed by s h jenkins e a$$AT</k2>
+              </frbr>
+              <delivery>
+                <institution>KUL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Jenkins</aulast>
+                <aufirst>S. H.</aufirst>
+                <addau>Jenkins, S. H</addau>
+                <btitle>Phosphorus in fresh water and the marine environment</btitle>
+                <seriestitle>Progress in water technology 2</seriestitle>
+                <date>1973</date>
+                <risdate>1973</risdate>
+                <isbn>0-08-017697-6</isbn>
+                <format>book</format>
+                <genre>book</genre>
+                <ristype>BOOK</ristype>
+                <cop>Oxford</cop>
+                <pub>Pergamon</pub>
+                <lccn>73-03103</lccn>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt1="http://opac.libis.be/F?func=item-global&amp;doc_library=LBS01&amp;local_base=LBS01&amp;doc_number=000023120" GetIt2="http://sfx.libis.be/sfxlcl3?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2009-06-03T13%3A58%3A58IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primoJournal-LBS01&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=book&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Phosphorus%20in%20fresh%20water%20and%20the%20marine%20environment&amp;rft.aulast=Jenkins&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=0-08-017697-6&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft.object_id="/>
+        </sear:DOC>
+      </sear:DOCSET>
+    </sear:RESULT>
+  </sear:JAGROOT>
+</sear:SEGMENTS>

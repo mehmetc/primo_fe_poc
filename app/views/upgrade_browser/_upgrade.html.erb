@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang='en' class="primo-ui {layout: 'default'}">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Limo powered by ExLibris fueled by Libis</title>
+	<style>
+		body {
+			font-family: "Lucida Grande",Verdana,Sans-Serif;
+			background-color:#F0F0F0;
+		}
+	
+		#main_content {
+			background-position:right bottom;
+			background-repeat:repeat-x;
+			text-align:center;
+			width:100%;	
+			height: 300px;
+			position: relative;
+		}	
+	
+		.border-left {
+			background-image: url(images/border_left.gif);
+			background-color:#F0F0F0;
+			background-repeat: norepeat;		
+			float:left;
+			height:250px;
+			width: 56px;		
+		}
+	
+		.border-right {
+			background-image: url(images/border_right.gif);
+			background-color:#F0F0F0;
+			background-repeat: norepeat;
+			float: left;
+			height:250px;
+			width: 56px;	
+		}
+	
+		#browser_logos a {
+			padding-top: 50px;
+			height: 200px;
+			float:left;
+			background-color:#fff;
+		}
+	
+		#container {
+			background-color: #fff;
+			margin-top: 30px;
+			margin-left:auto;
+			margin-right:auto;
+			clear:both;
+			width:897px;
+		}
+	
+		#message {
+			padding:30px 50px 0px 50px;
+		}
+	</style>
+</head>
+
+
+
+<body>		
+	<div id='lbs-main-container'>
+		<%= yield %>	
+
+	<div id="main_content" style='text-align:center'>
+
+	<div id='container'>
+		<div id='border_left' class='border-left'></div>
+		<div id='browser_logos'>	
+		<%= link_to(image_tag('browser_logos/firefox.png', :alt => 'Firefox', :border => false), 'http://www.getfirefox.com') %>
+		<%= link_to(image_tag('browser_logos/safari.png', :alt => 'Safari', :border => false), 'http://www.apple.com/safari/download/') %>
+		<%= link_to(image_tag('browser_logos/ie7.jpeg', :alt => 'Internet Explorer', :border => false), 'http://www.microsoft.com/ie8') %>	
+		<%= link_to(image_tag('browser_logos/chrome.jpeg', :alt => 'Chrome', :border => false), 'http://www.google.com/chrome') %>		
+		<%= link_to(image_tag('browser_logos/opera.png', :alt => 'Opera', :border => false), 'http://www.opera.com') %>	
+		</div>
+		<div id='border_right' class='border-right'></div>
+	</div>
+
+	<div id='message' style='clear:both'>
+	<h1>Dear user you are currently using '<%= request.user_agent_info['name_display'] %>' version <%= request.user_agent_info['version'] %>. We do not support this browser, please download a more recent browser</h1>
+
+	<h2>If you are unable to install applications on your OS there are also <a href='http://portableapps.com/'>portable</a> versions available. Download, unzip and use.</h2>
+	</div>
+
+</body>
+</html>

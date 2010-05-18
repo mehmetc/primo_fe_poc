@@ -1,0 +1,78 @@
+				<div id='advancedSearchWrapper' >
+					<form id='advancedSearchForm' method='get' action='#'>
+					<fieldset id="search">
+						<div class='query_row'>
+							<select class='index'>
+								<option selected value='any'> Anywhere </option>
+								<option value='title'> Title </option>			
+								<option value='creator'> Creator </option>			
+								<option value='sub'> subject </option>						
+							</select>
+							<select class='match'>
+								<option selected value='contains'> Contains </option>
+								<option value='exact'> Exact </option>
+								<option value='begins_with'> Begins With </option>
+							</select>
+							<input class='term' type='text' />
+						</div>
+						<div class='query_row'>
+							<select class='index'>
+								<option selected value='any'> Anywhere </option>
+								<option value='title'> Title </option>			
+								<option value='creator'> Creator </option>			
+								<option value='sub'> subject </option>						
+							</select>
+							<select class='match'>
+								<option selected value='contains'> Contains </option>
+								<option value='exact'> Exact </option>
+								<option value='begins_with'> Begins With </option>
+							</select>
+							<input class='term' type='text' />
+						</div>			
+						<div class='query_row'>
+							<select class='index'>
+								<option selected value='any'> Anywhere </option>
+								<option value='title'> Title </option>			
+								<option value='creator'> Creator </option>			
+								<option value='sub'> subject </option>						
+							</select>
+							<select class='match'>
+								<option selected value='contains'> Contains </option>
+								<option value='exact'> Exact </option>
+								<option value='begins_with'> Begins With </option>
+							</select>
+							<input class='term' type='text' />
+						</div>
+						<div id="FilterWrapper">
+							<div class='query_row'>
+								<input class='index' type='hidden' value='facet_rfilter' />
+								<input class='match' type='hidden' value='contains' />
+								<label for='material_type'>Material type:</label>
+								<div class="filterInputField">
+									<select class="term" name='material_type'>
+										<option value="books">Books</option>
+										<option value="articles">Articles</option>
+										<option value="journals">Journals</option>
+										<option value="images">Images</option>
+										<option value="audio_video">Audio Visual</option>
+										<option selected="selected" value="">All items</option>
+									</select>			
+								</div>			
+							</div>				
+							<div class='query_row'>
+								<input class='index' type='hidden' value='facet_creationdate' />
+								<input class='match' type='hidden' value='contains' />
+								<input class='term' type='hidden' name="yearTerm"  value="" />
+								<label for="yearTerm">Publication Year:</label>
+								<div class="filterInputField">
+									<input class='year_term' type='text' name="yearTermFrom" size="4" value="" />
+									-
+									<input class='year_term' type='text' name="yearTermTill" size="4"/>
+								</div>
+							</div>
+						</div>
+						<input id='goButtonAdvanced' type='submit' value='Search' />
+						<div id="gotoSearchWrapper"><a href="#" id="gotoSimpleSearch"></a></div>						
+					</fieldset>
+					</form>
+				</div> 

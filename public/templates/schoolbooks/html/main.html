@@ -1,0 +1,78 @@
+<div id="main_content">
+
+<div id='searchWrapper'>
+	<fieldset id='search'>
+	<form id='advancedSearchForm' method='get' action='#'>
+<!--
+		<div class='query_row'>
+			<input class='index' type='hidden' value='scope' />
+			<input class='match' type='hidden' value='contains' />
+			<input class='term' type='hidden' value="BSCH" />
+		</div>
+-->
+		<div class='query_row'>
+			<input class='index' type='hidden' value='any' />
+			<input class='match' type='hidden' value='contains' />
+<label for="anyTerm">Keyword:</label>
+			<input class='term' type='text' name="anyTerm" />
+		</div>
+		<div class='query_row'>
+			<input class='index' type='hidden' value='title' />
+			<input class='match' type='hidden' value='contains' />
+<label for="titleTerm">Title:</label>
+			<input class='term' type='text' name="titleTerm" />
+		</div>
+		<div class='query_row'>
+			<input class='index' type='hidden' value='creator' />
+			<input class='match' type='hidden' value='contains' />
+<label for="creatorTerm">Author:</label>
+			<input class='term' type='text' name="creatorTerm" />
+		</div>
+		<div class='query_row'>
+			<input class='index' type='hidden' value='publisher' />
+			<input class='match' type='hidden' value='contains' />
+<label for="publisherTerm">Publisher:</label>
+			<input class='term' type='text' name="publisherTerm" />
+		</div>
+		<div class='query_row'>
+			<input class='index' type='hidden' value='facet_creationdate' />
+			<input class='match' type='hidden' value='contains' />
+			<input class='term' type='hidden' name="yearTerm"  value="" />
+<label for="yearTerm">Publication Year:</label>
+			<input class='year_term' type='text' name="yearTermFrom" size="4" value="" />
+			-
+			<input class='year_term' type='text' name="yearTermTill" size="4"/>
+			<input id='goButtonAdvanced' type='submit' value='Search' style='float:right; margin-right:1em;'/>
+		</div>
+
+	</form>
+		</fieldset>
+</div>
+
+<!--
+	<div id='searchWrapper'>
+		<form id='searchForm' method='get' action=''>
+			<fieldset id="search">
+				<# var query = "";
+				   if (search.query != null) query = search.query; 
+				#>
+				<input name="" type="text" value="" style="display: none;" />
+				<input id='search_field' type='text' value='<#= query #>' />
+				<input id='goButton' type='submit' value='Search' />
+			</fieldset>
+		</form>
+	</div>
+-->
+</div>
+
+
+
+<div class='clearer' id='footer'>
+	<div>
+		<a href="http://www.libis.be">Copyright © Libis</a>
+		<a href="http://www.libis.be/contact.php">Contact LIBIS</a>
+		<a href="http://www.kuleuven.be">K.U.Leuven</a>
+		<a href="http://www.kuleuven.be"><img src='<#= template_dir #>/images/white-kul-logo.png'></a>
+	</div>
+</div>
+

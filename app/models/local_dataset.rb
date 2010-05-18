@@ -1,0 +1,2 @@
+class LocalDataset < Dataset
+end

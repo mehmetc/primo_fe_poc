@@ -1,0 +1,171 @@
+<#
+recordtext = "";
+var record = "";
+var page          = parseInt(results.records.page);
+var step          = results.records.step;
+var total_records = parseInt(results.records.total);
+var total_pages   = Math.round(total_records / step);
+
+
+var record_index = results.currentFull - ((page - 1) * step); /* only 10 records are loaded calculate array index */
+
+
+/*jQuery.primo.log("currentfull="+results.currentFull + "   page =" +page + ' = ' +record_index);*/
+
+results.records.showing = record_index;
+
+record = results.records.data[record_index]; 
+
+var attribute_order = ['vertitle', 'unititle', 'seriestitle', 'author', 'contributor', 'isbn', 'ispartof', 'creationdate',
+	'publisher', 'content', 'description', 'format', 'language', 'snippet'];
+
+var attribute_label = {	'vertitle'		: 'Other title', 
+						'unititle'		: 'Other title', 
+						'seriestitle'	: 'Series title', 
+						'author' 		: 'Author',
+						'contributor' 	: 'Contributor', 
+						'isbn'			: 'ISBN',
+						'ispartof' 		: 'Is Part Of',
+						'creationdate' 	: 'Creation date',
+						'publisher' 	: 'Publisher', 
+						'content' 		: 'Content', 
+						'description' 	: 'Description', 
+						'format' 		: 'Format', 
+						'language' 		: 'Language', 
+						'snippet' 		: 'Snippet'};
+
+var material_types = {'book'  : {'label'  : 'Book', 'url' : '/images/materials/book.gif'},
+					 'score' : {'label' : 'Book', 'url' : '/images/materials/score.gif'},
+					 'other' : {'label' : 'Book', 'url' : '/images/materials/book_plus.gif'}};
+
+var material_type = material_types[record.type] == null ? 'other' : record.type;
+
+var typeIcon = ""; 
+var typeDescription = "";
+var material_type = 'other';
+
+if (record.type.length != 0){
+	material_type = material_types[record.type] == null ? 'other' : record.type;
+	typeIcon = material_types[material_type].url;
+	typeDescription = material_types[material_type].label;			
+}
+
+#>
+
+<div id='full_wrapper'>
+	<div style='width:100%;'>
+		<div id='full_desc_wrapper'>
+			<div id='full_desc_content_wrapper'>
+
+				<div id='full_desc'>
+					<# if (record.type.length != 0){ #>
+					<div id='full_desc_icon'>
+						<img src='<#= template_dir + typeIcon #>'>
+					</div>
+					<# } #>
+					<div id='full_record_title'> 
+						<#= record.title #>
+						<a href='<#=record.getit[1]#>'> <img src='<#=template_dir + '/images/f-sfx.gif' #>' alt='LibriLinks' title='LibriLinks'></a>
+					</div>
+
+				<div id='full_cover'>
+					<img src='<#= template_dir #>/images/ajax-loader.gif' />
+					<div id='full_cover_data' style='display:none;' />
+				</div>
+
+					<ul style='list-style-type:none; padding-left:10px;font-size:10px; margin-top:10px;'>
+<# 
+						for (var i=0; i < attribute_order.length; i++){
+							label = attribute_label[attribute_order[i]];
+							text  = record[attribute_order[i]];
+
+							if (text.length > 0) {
+#>
+								<li class='letter-line-spacer clearer'><div class='content_label'><#= label #>: </div><#= text #></li>
+<#								
+							}
+						}
+#>
+
+					</ul>
+				</div> <!-- div id='full_desc' -->
+				<div id='full_available'>
+					<img src='<#= template_dir #>/images/ajax-loader.gif' />
+					<div id='full_available_data' style='display:none;' />
+				</div>
+			</div> <!-- div id='full_desc_content_wrapper' --> 
+			<div id='full_nav_wrapper'>
+				<ul>
+<#
+ 	if (results.records.page != 1){
+#>
+			<li class='full_item_prevnav full_item_nav' id='<#= parseInt(results.records.page)-1 #>'>Previous 10 records</li>
+<#
+}else{
+#>			
+			<li class='full_item_prevnav_inactive'>Previous 10 records</li>
+<#
+}
+#>
+
+<#
+for (var i=0; i < results.records.data.length; i++){
+	var record = results.records.data[i];
+	var class_text = "";
+	if (i == 0 ) {
+		class_text += "first ";
+	}
+	
+	if (i == results.currentFull){
+		class_text += " current";
+	}else{
+		class_text += " nav_full_desc";		
+	}
+	
+#>	
+					<li class='<#= class_text #>' id='<#= "result"+ (i+parseInt(results.records.from)) #>'>
+						<#= (i+parseInt(results.records.from)) #> <#= record.title.substr(0,20) #>
+					</li>
+<#
+}
+#>					
+
+
+<#
+
+ 	if (results.records.page != total_pages && total_pages > 1){
+#>
+			<li class='full_item_nextnav full_item_nav' id='<#= parseInt(results.records.page)+1 #>'>Next 10 records</li>
+<#
+	}else{
+#>			
+			<li class='full_item_nextnav_inactive'>Next 10 records</li>
+<#
+	}
+#>
+		
+					<li class='full_item_close'>Back to resultlist</li>
+				</ul>
+			</div> <!-- div id='full_nav_wrapper' -->
+		</div> <!-- div id='full_desc_wrapper' -->
+	</div>
+	<div class='clearer'></div>
+</div> <!-- full_wrapper -->
+
+<script type='text/javascript'>
+jQuery.getJSON('/item_data/<#= results.records.data[results.records.showing].aleph_id #>', function(data){
+	jQuery.primo.params.results.currentFullHoldings = data;
+	jQuery.primo.ui.html_append("#full_available_data", "item_data");
+	$('#full_available img').css('display', 'none');	
+	$('#full_available_data').css('display', 'block');
+});
+
+jQuery.getJSON('http://webservices.bibliotheek.be/cgi/VlaccCover.pl?func=filesavailable&output=json&ISBN=&EAN=634904019228&callback=?', function(data){
+	jQuery.primo.params.results.currentFullCoverData = data;
+	jQuery.primo.ui.html_append("#full_cover_data", "full_cover");
+	$('#full_cover img').css('display', 'none');	
+	$('#full_cover_data').css('display', 'block');
+});
+
+</script>
+

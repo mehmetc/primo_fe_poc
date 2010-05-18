@@ -1,0 +1,44 @@
+<div id="main_content">
+	<div style="text-align:center; padding-bottom:5em;">
+			<img src="<#= template_dir #>/images/logo.png" id='limo_logo'>
+	</div>
+
+	<div id='mainSearchWrapper'>
+		<div id='searchQueryWrapper'>
+			<div id="fixsearchposition">
+<#= jQuery.primo.ui.html_load('databases') #>
+
+				<div class='toplineSearchInput' ><div>&nbsp;&nbsp;&nbsp;</div> </div>
+
+
+
+<#= jQuery.primo.ui.html_load('search') #>
+
+<#= jQuery.primo.ui.html_load('search_advanced') #>
+			</div> 
+		</div>
+<!------   MSS LEUKE FEATURE VOORLATER (ZIE DEEPDYVE)  -----------------
+		<div id='activeFilterWrapper' style="display:none; ">
+		<div>Later invullen met gegevens.</div>
+		</div>
+--------------------------------------------------------------------------->
+
+		<div class='bottomlineSearchInput'><div>&nbsp;&nbsp;&nbsp;</div></div>
+	</div> 
+
+</div> <!-- <div id="main_content"> -->
+
+<div id='main_info'>
+	<#= jQuery.primo.ui.html_load('news') #>
+</div>
+
+
+<div class='clearer' id='footer'>
+	<div>
+		<a href="http://www.libis.be">Copyright © Libis</a>
+		<a href="http://www.libis.be/contact.php">Contact LIBIS</a>
+		<a href="http://www.kuleuven.be">K.U.Leuven</a>
+		<a href="http://www.kuleuven.be"><img src='<#= template_dir #>/images/white-kul-logo.png'></a>
+	</div>
+</div>
+

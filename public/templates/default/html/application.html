@@ -1,0 +1,21 @@
+<div id='ajaxBusy'>
+	<p>Loading ...</p>
+</div>
+
+<div id='header-block'>
+	<a href="/"><img src="<#= template_dir #>/images/logo_xs.png" id="header_logo"/></a>		
+	<ul id='header_menu_top_right'>
+		<li> <a href='#'>Logon</a></li>
+		<li> <a href='#'>About</a></li>				
+		<li> <a href='#'>Help</a></li>			
+	</ul>
+</div>
+<!--
+<#= jQuery.primo.ui.html_load('info') #>
+-->
+<#= jQuery.primo.ui.html_load('feedback') #>
+
+<div id='main'>
+<#= jQuery.primo.ui.html_load(jQuery.primo.params.view) #>
+</div>
+
